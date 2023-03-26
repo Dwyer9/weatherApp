@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-display">
+        <input type="text" placeholder="Enter City" class="search-input" />
+        <button class="search-btn">Search</button>
+      </div>
+      <div class="error-display hidden">
+        <span class="error-message">No cities found. Please try a new search</span>
+      </div>
+      <div class="weather-display hidden">
+        <p class="city">Sydney</p>
+        <div class=" weather-item">
+          <div class="current-temp-cel current-temp">28&#176</div>
+          <div class="current-temp-fah current-temp hidden">28 &#176 </div>
+          <p class="descriptor condition-display">Partly Cloudy</p></div>
+        <div class=" weather-item">
+          <div class="feels-like-cel">28&#176</div>
+          <div class="feels-like-fah hidden">28 &#176 </div>
+          <p class="descriptor"> Feels like </p>
+        </div>
+        <div class="weather-item">
+          <div class="humidity">76% </div>
+          <p class="descriptor">Humidity </p>
+        </div>
+        <div class=" wind weather-item">
+          <div class="wind-km">9 km/h SW </div>
+          <div class="wind-mph hidden">6 mph SW </div>
+          <p class="descriptor">Wind </p>
+        </div>
+        <div class="location-details">
+          <span class="location-date">26/3/23</span>
+          <span class="location-time">10:03am</span>
+        </div>
+      </div>
+      <div class="toggles hidden">
+        <label class="switch">
+          <input type="checkbox" class="deg-toggle">
+          <span class="slider round"></span>
+        </label>
+        <label class="switch">
+          <input type="checkbox" class="speed-toggle">
+          <span class="slider round"></span>
+        </label>
+        <span class="deg-display">C</span>
+        <span class="speed-display">km/h</span>
+      </div>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
